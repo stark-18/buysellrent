@@ -1,0 +1,180 @@
+@font-face {
+  font-family: domain;
+  src: url(./domain.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+  font-family: canopee;
+
+    font-size: 62.5%;
+}
+
+
+   #list{
+  display:flex;
+  position: absolute;
+  left:79rem;
+  top:1rem;
+
+
+    list-style-type: none;
+    margin-top: 1.4rem;
+    /* width: 110px; */
+
+   }
+
+.margin{
+    margin:0rem 1.9rem;
+}
+li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color:#3a3a3a;
+}
+li a::after{
+    content:'';
+    height: .4rem;
+    width: 0;
+    background: #e27e97d5;
+    transition: all .5s;
+    display: block;
+}
+li a:hover::after{
+    width: 100%;
+
+}
+li a:hover{
+    color:#3a3a3a;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:16rem;
+    margin-top: 2.5rem;
+}
+.btnstyle{
+    margin:2rem 0rem;
+    padding: 1.6rem 5.5rem;
+    border-radius: 1.5rem;
+    color: #191919;
+    font-size: 1.8rem;
+    font-family: domain;
+}
+.btnstyle:hover{
+    background-color: #e27e97d5;
+}
+.logo{
+    width: 11rem;
+    position: absolute;
+}
+#search{
+    border-radius: 2rem;
+   
+    padding:1rem 8rem 1rem 3.3rem;
+   
+  
+}
+.inputid::-webkit-input-placeholder { 
+  font-family: domain;
+}
+.searchbar{
+    /* font-family: domain; */
+    position: absolute;
+    left:39rem;
+    margin-top: 1.4rem;
+}
+#search:hover{
+    background-color:#ec8da4d5 ;
+    cursor:pointer;
+}
+#image{
+  position: relative;
+  right:26.9rem;
+  top:1rem;
+  width:2rem;
+  margin-bottom: .5rem;
+
+}
+.cl1::-webkit-input-placeholder{
+    color:white;
+}
+.cl2::-webkit-input-placeholder{
+    color:rgb(54, 53, 53);
+}
+.header{
+    width:126rem;
+    height:6.852rem;
+    background-color: #33323249;
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    html{
+        
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
